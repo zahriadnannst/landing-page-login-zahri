@@ -1,8 +1,4 @@
 
-FROM nginx:alpine
-
+FROM nginx
+LABEL maintainer="zahriadnannst@gmail.com"
 COPY . /usr/share/nginx/html
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
